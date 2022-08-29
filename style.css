@@ -11,3 +11,31 @@ html {
   position: relative;
 }
 
+.header {
+    display: grid;
+    grid-template-columns: 25% 40% 25%;
+    column-gap: 5%;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 3.5vw;
+}
+
+.cabins-left {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+}
+
+.cabins-right {
+    display: flex;
+    gap: 5%;
+}
+
+.cabins-left > img,
+.cabins-right > img {
+    width: 10%;
+}
