@@ -43,31 +43,72 @@
             </div>
         </div>
 
-        <div id="choose-date" class="show">
-            <div class="welcome">
-                <h2>Welcome to the Cabin Generator!</h2>
-                <h3>To generate some cabins, start by choosing a date:</h3>
-            </div>
-            <form class="date-choices">
-                <div class="date-radios"></div>
-                <div class="date-submit">
-                    
+        <div class="overlay-choose-date">
+            <div id="choose-date">
+                <div class="welcome">
+                    <h2>Welcome to the Cabin Generator!</h2>
+                    <h3>To generate some cabins, start by choosing a date:</h3>
                 </div>
-            </form>
-        </div>
-
-        <div id="choose-region" class="hide">
-            <div class="welcome">
-                <h2>Welcome to the Cabin Generator!</h2>
-                <h3>Then select a region:</h3>
+                <form class="date-choices">
+                    <div class="date-radios">
+                        <div>
+                            <input type="radio" name="date-radio" id="oct14" value="oct14" required>
+                            <label for="oct14">Oct. 14-16</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="date-radio" id="nov4" value="nov4" required>
+                            <label for="nov4">Nov. 4-6</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="date-radio" id="nov25" value="nov25" required>
+                            <label for="nov25">Nov. 25-27</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="date-radio" id="oct21" value="oct21" required>
+                            <label for="oct21">Oct. 21-23</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="date-radio" id="nov11" value="nov11" required>
+                            <label for="nov11">Nov. 11-13</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="date-radio" id="dec9" value="dec9" required>
+                            <label for="dec9">Dec. 9-11</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="date-radio" id="oct28" value="oct28" required>
+                            <label for="oct28">Oct. 28-30</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="date-radio" id="nov18" value="nov18" required>
+                            <label for="nov18">Nov. 18-20</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="date-radio" id="dec16" value="dec16" required>
+                            <label for="dec16">Dec. 16-18</label>
+                        </div>
+                    </div>
+                    <div class="date-submit">
+                        <input type="submit" value="Ready">
+                    </div>
+                </form>
             </div>
-            <form class="region-choices">
-                <div class="region-radios"></div>
-                <div class="region-submit"></div>
-            </form>
         </div>
 
-        <div id="results" class="hide"></div>
+        <div class="overlay-choose-region">
+            <div id="choose-region">
+                <div class="welcome">
+                    <h2>Welcome to the Cabin Generator!</h2>
+                    <h3>Then select a region:</h3>
+                </div>
+                <form class="region-choices">
+                    <div class="region-radios"></div>
+                    <div class="region-submit"></div>
+                </form>
+            </div>
+        </div>
+        
+        <div id="results"></div>
 
         <div class="footer">
             <p>By CMP</p>

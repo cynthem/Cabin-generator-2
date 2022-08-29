@@ -68,14 +68,6 @@ h1 {
     transform: scale(1.1);
 }
 
-.show {
-    display: grid;
-}
-
-.hide {
-    display: none;
-}
-
 
 /* CHOOSE DATE */
 
@@ -93,8 +85,17 @@ h1 {
     box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
+.date-radios {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
 
 /* CHOOSE REGION */
+
+.overlay-choose-region {
+    display: none;
+}
 
 #choose-region {
     background-color: #E84855;
@@ -108,4 +109,11 @@ h1 {
     margin: auto;
     border-radius: 10px;
     box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* RESULTS */
+
+#results {
+    display: none;
 }
