@@ -19,12 +19,20 @@ regionBtn.addEventListener('submit', e => {
     e.preventDefault();
     regionCard.classList.toggle('choose-region-open');
     regionOverlay.classList.toggle('overlay-region-invisible');
-    window.setTimeout(() => {resultsCard.style.display = 'flex'}, 300);
+    window.setTimeout(() => {
+        resultsCard.classList.add('fade-in');
+        resultsCard.style.display = 'flex';
+    }, 300);
+    window.setTimeout(() => {resultsCard.classList.remove('fade-in')}, 1000);
 });
 
 resetBtn.addEventListener('click', e => {
-    resultsCard.style.display = 'none';
-    dateCard.classList.toggle('choose-date-open');
-    dateOverlay.classList.toggle('overlay-date-invisible');
+    resultsCard.classList.add('fade-out');
+    window.setTimeout(() => {
+        resultsCard.style.display = 'none';
+        resultsCard.classList.remove('fade-out');
+        dateCard.classList.toggle('choose-date-open');
+        dateOverlay.classList.toggle('overlay-date-invisible');
+    }, 1000);
 });
 
