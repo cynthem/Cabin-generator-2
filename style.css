@@ -222,7 +222,6 @@ input[type=submit]:active {
     display: grid;
     grid-template-rows: 70% 20%;
     row-gap: 10%;
-    padding-bottom: 1%;
 }
 
 .region-radios {
