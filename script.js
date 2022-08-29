@@ -6,6 +6,8 @@ const regionCard = document.querySelector('.choose-region');
 const regionOverlay = document.querySelector('.overlay-choose-region');
 const resetBtn = document.querySelector('.reset');
 const resultsCard = document.querySelector('.results');
+let chosenDate;
+let chosenRegion;
 
 dateBtn.addEventListener('submit', e => {
     e.preventDefault();
@@ -13,12 +15,15 @@ dateBtn.addEventListener('submit', e => {
     dateOverlay.classList.toggle('overlay-date-invisible');
     regionCard.classList.toggle('choose-region-open');
     regionOverlay.classList.toggle('overlay-region-invisible');
+    chosenDate = document.querySelector('[name="date-radio"]:checked').value;
 });
 
 regionBtn.addEventListener('submit', e => {
     e.preventDefault();
     regionCard.classList.toggle('choose-region-open');
     regionOverlay.classList.toggle('overlay-region-invisible');
+    chosenRegion = document.querySelector('[name="region-radio"]:checked').value;
+    filterResults(chosenRegion, chosenDate);
     window.setTimeout(() => {
         resultsCard.classList.add('fade-in');
         resultsCard.style.display = 'flex';
@@ -36,3 +41,18 @@ resetBtn.addEventListener('click', e => {
     }, 1000);
 });
 
+function filterResults(region, date) {
+    if (region === 'olympic') {
+        renderOlympic(date);
+    } else if (region === 'northwest') {
+        renderNorthwest(date);
+    } else if (region === 'southeast') {
+        renderSoutheast(date);
+    }
+}
+
+function renderOlympic(date) {}
+
+function renderNorthwest(date) {}
+
+function renderSoutheast(date) {}
