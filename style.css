@@ -71,23 +71,82 @@ h1 {
 
 /* CHOOSE DATE */
 
+.overlay-choose-date {
+    z-index: 2;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s;
+}
+
+.overlay-date-invisible {
+    visibility: hidden;
+    opacity: 0;
+}
+
 #choose-date {
-    background-color: #E84855;
-    height: 60vh;
-    width: 50vw;
-    position: absolute;
-    top:0;
+    position: relative;
+    top: 10%;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    background-color: #E84855;
+    height: 60vh;
+    width: 50vw;
     border-radius: 10px;
     box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.3);
+    visibility: visible;
+    transition: all .3s;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+    display: grid;
+    grid-template-rows: 30% 60%;
+    row-gap: 10%;
+}
+
+.choose-date-open {
+    transform: scale(1);
+    visibility: visible;
+}
+
+.welcome {
+    text-align: center;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'American Typewriter', serif;
+}
+
+h2 {
+    font-size: 2.25vw;
+}
+
+h3 {
+    font-size: 1.75vw;
+}
+
+.date-choices {
+    display: grid;
+    grid-template-rows: 70% 20%;
+    row-gap: 10%;
 }
 
 .date-radios {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    height: 90%;
+    font-size: 1vw;
+    align-items: center;
+    justify-items: center;
+}
+
+.date-submit {
+    text-align: center;
 }
 
 
