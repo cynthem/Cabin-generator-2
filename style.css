@@ -257,6 +257,8 @@ input[type=submit]:active {
 .results {
     display: flex;
     flex-direction: column;
+    gap: 5vh;
+    padding-bottom: 5vh;
 }
 
 .embeds {
