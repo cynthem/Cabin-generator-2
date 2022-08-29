@@ -40,8 +40,19 @@ resetBtn.addEventListener('click', e => {
         results.classList.remove('fade-out');
         dateCard.classList.toggle('choose-date-open');
         dateOverlay.classList.toggle('overlay-date-invisible');
+        resetResults();
     }, 1000);
 });
+
+function resetResults() {
+    embeds.forEach(embed => {
+        if (!embed.classList.contains('hide')) {
+            embed.classList.add('hide');
+        }
+    })
+    chosenDate = '';
+    chosenRegion = '';
+}
 
 function filterResults(region, date) {
     if (region === 'olympic') {
@@ -57,14 +68,10 @@ function renderOlympic(date) {
     if (date === 'oct14') {
         embeds.forEach(embed => {
             if (embed.classList.contains('olympic') && embed.classList.contains('oct14')) {
-                embed.classList.add('show');
-            } else {
-                embed.classList.add('hide');
+                embed.classList.remove('hide');
             }
         })
     }
-    chosenDate = '';
-    chosenRegion = '';
 }
 
 function renderNorthwest(date) {}
