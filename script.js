@@ -7,3 +7,14 @@ dateBtn.addEventListener('submit', e => {
     dateCard.classList.toggle('choose-date-open');
     dateOverlay.classList.toggle('overlay-date-invisible');
 });
+
+const regionBtn = document.querySelector('.region-choices');
+const regionCard = document.querySelector('.choose-region');
+const regionOverlay = document.querySelector('.overlay-choose-region');
+
+regionBtn.addEventListener('submit', e => {
+    e.preventDefault();
+    regionCard.classList.toggle('choose-region-open');
+    regionOverlay.classList.toggle('overlay-region-invisible');
+});
+
