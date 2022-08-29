@@ -56,16 +56,15 @@ function filterResults(region, date) {
 function renderOlympic(date) {
     if (date === 'oct14') {
         embeds.forEach(embed => {
-            embed.classList.remove('show');
-            embed.classList.remove('hide');
             if (embed.classList.contains('olympic') && embed.classList.contains('oct14')) {
                 embed.classList.add('show');
             } else {
                 embed.classList.add('hide');
             }
         })
-
     }
+    chosenDate = '';
+    chosenRegion = '';
 }
 
 function renderNorthwest(date) {}
