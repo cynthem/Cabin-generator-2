@@ -79,7 +79,6 @@ h1 {
     visibility: visible;
     opacity: 1;
     transition: all .3s;
-    display: none;
 }
 
 .overlay-date-invisible {
@@ -209,9 +208,9 @@ input[type=submit]:active {
     display: grid;
     grid-template-rows: 20% 75%;
     row-gap: 5%;
-    visibility: visible;
-    /*visibility: hidden;*/
-    /*transform: scale(0.05);*/
+    /*visibility: visible;*/
+    visibility: hidden;
+    transform: scale(0.05);
 }
 
 .choose-region-open {
