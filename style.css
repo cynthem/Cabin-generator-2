@@ -207,8 +207,8 @@ input[type=submit]:active {
     box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.3);
     transition: all .3s;
     display: grid;
-    grid-template-rows: 30% 60%;
-    row-gap: 10%;
+    grid-template-rows: 20% 75%;
+    row-gap: 5%;
     visibility: visible;
     /*visibility: hidden;*/
     /*transform: scale(0.05);*/
@@ -219,8 +219,36 @@ input[type=submit]:active {
     visibility: visible;
 }
 
+.region-choices {
+    display: grid;
+    grid-template-rows: 70% 20%;
+    row-gap: 10%;
+    padding-bottom: 1%;
+}
+
+.region-radios {
+    display: grid;
+    grid-template-columns: 60% 35%;
+    column-gap: 5%;
+}
+
 .region-radios > img {
-    width: 50%;
+    width: 90%;
+    justify-self: end;
+}
+
+.radios {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 90%;
+    font-size: 1.5vw;
+    font-family: 'American Typewriter', serif;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.region-submit {
+    text-align: center;
 }
 
 
