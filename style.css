@@ -282,6 +282,14 @@ input[type=submit]:active {
     justify-items: center;
 }
 
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
 .reset-button {
     text-align: center;
 }
