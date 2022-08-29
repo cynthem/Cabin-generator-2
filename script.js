@@ -4,6 +4,8 @@ const dateOverlay = document.querySelector('.overlay-choose-date');
 const regionBtn = document.querySelector('.region-choices');
 const regionCard = document.querySelector('.choose-region');
 const regionOverlay = document.querySelector('.overlay-choose-region');
+const resetBtn = document.querySelector('.reset');
+const resultsCard = document.querySelector('.results');
 
 dateBtn.addEventListener('submit', e => {
     e.preventDefault();
@@ -17,5 +19,12 @@ regionBtn.addEventListener('submit', e => {
     e.preventDefault();
     regionCard.classList.toggle('choose-region-open');
     regionOverlay.classList.toggle('overlay-region-invisible');
+    window.setTimeout(() => {resultsCard.style.display = 'flex'}, 300);
+});
+
+resetBtn.addEventListener('click', e => {
+    resultsCard.style.display = 'none';
+    dateCard.classList.toggle('choose-date-open');
+    dateOverlay.classList.toggle('overlay-date-invisible');
 });
 

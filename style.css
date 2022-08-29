@@ -105,7 +105,6 @@ h1 {
     visibility: visible;
     /*visibility: hidden;*/
     /*transform: scale(0.05);*/
-    display: none;
 }
 
 .choose-date-open {
@@ -186,7 +185,6 @@ input[type=submit]:active {
     visibility: visible;
     opacity: 1;
     transition: all .3s;
-    display: none;
 }
 
 .overlay-region-invisible {
@@ -210,7 +208,6 @@ input[type=submit]:active {
     display: grid;
     grid-template-rows: 20% 75%;
     row-gap: 5%;
-    /*visibility: visible;*/
     visibility: hidden;
     transform: scale(0.05);
 }
@@ -255,7 +252,7 @@ input[type=submit]:active {
 /* RESULTS */
 
 .results {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 5vh;
     padding-bottom: 5vh;
