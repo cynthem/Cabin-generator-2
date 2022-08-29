@@ -1,3 +1,13 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
 *,
 *::after,
 *::before {
@@ -250,6 +260,14 @@ input[type=submit]:active {
 
 
 /* RESULTS */
+
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+.fade-out {
+    animation: fadeOut 1s;
+}
 
 .results {
     display: none;
