@@ -96,14 +96,31 @@
         </div>
 
         <div class="overlay-choose-region">
-            <div id="choose-region">
+            <div class="choose-region">
                 <div class="welcome">
-                    <h2>Welcome to the Cabin Generator!</h2>
-                    <h3>Then select a region:</h3>
+                    <h3>Select a region to see your results:</h3>
                 </div>
                 <form class="region-choices">
-                    <div class="region-radios"></div>
-                    <div class="region-submit"></div>
+                    <div class="region-radios">
+                        <img src="./resources/regions.png">
+                        <div class="radios">
+                            <div>
+                                <input type="radio" name="region-radio" id="olympic" value="olympic" required>
+                                <label for="olympic">Olympic/Coast</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="region-radio" id="northwest" value="northwest" required>
+                                <label for="northwest">Northwest</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="region-radio" id="southeast" value="southeast" required>
+                                <label for="southeast">Southeast</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="region-submit">
+                        <input type="submit" value="Ready">
+                    </div>
                 </form>
             </div>
         </div>
