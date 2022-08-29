@@ -5,7 +5,9 @@ const regionBtn = document.querySelector('.region-choices');
 const regionCard = document.querySelector('.choose-region');
 const regionOverlay = document.querySelector('.overlay-choose-region');
 const resetBtn = document.querySelector('.reset');
-const resultsCard = document.querySelector('.results');
+const results = document.querySelector('.results');
+const embeds = document.querySelectorAll('.airbnb-embed-frame');
+
 let chosenDate;
 let chosenRegion;
 
@@ -25,17 +27,17 @@ regionBtn.addEventListener('submit', e => {
     chosenRegion = document.querySelector('[name="region-radio"]:checked').value;
     filterResults(chosenRegion, chosenDate);
     window.setTimeout(() => {
-        resultsCard.classList.add('fade-in');
-        resultsCard.style.display = 'flex';
+        results.classList.add('fade-in');
+        results.style.display = 'flex';
     }, 300);
-    window.setTimeout(() => {resultsCard.classList.remove('fade-in')}, 1000);
+    window.setTimeout(() => {results.classList.remove('fade-in')}, 1000);
 });
 
 resetBtn.addEventListener('click', e => {
-    resultsCard.classList.add('fade-out');
+    results.classList.add('fade-out');
     window.setTimeout(() => {
-        resultsCard.style.display = 'none';
-        resultsCard.classList.remove('fade-out');
+        results.style.display = 'none';
+        results.classList.remove('fade-out');
         dateCard.classList.toggle('choose-date-open');
         dateOverlay.classList.toggle('overlay-date-invisible');
     }, 1000);
@@ -46,12 +48,21 @@ function filterResults(region, date) {
         renderOlympic(date);
     } else if (region === 'northwest') {
         renderNorthwest(date);
-    } else if (region === 'southeast') {
+    } else {
         renderSoutheast(date);
     }
 }
 
-function renderOlympic(date) {}
+function renderOlympic(date) {
+    if (date === 'oct14') {
+        embeds.forEach(embed => {
+            if (embed.classList.contains('olympic') && embed.classList.contains('oct14')) {
+                embed.classList.add('show');
+            }
+        })
+
+    }
+}
 
 function renderNorthwest(date) {}
 
