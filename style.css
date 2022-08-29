@@ -105,6 +105,7 @@ h1 {
     visibility: visible;
     /*visibility: hidden;*/
     /*transform: scale(0.05);*/
+    display: none;
 }
 
 .choose-date-open {
@@ -185,6 +186,7 @@ input[type=submit]:active {
     visibility: visible;
     opacity: 1;
     transition: all .3s;
+    display: none;
 }
 
 .overlay-region-invisible {
@@ -252,6 +254,33 @@ input[type=submit]:active {
 
 /* RESULTS */
 
-#results {
-    display: none;
+.results {
+    display: flex;
+    flex-direction: column;
+}
+
+.embeds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.reset-button {
+    text-align: center;
+}
+
+.reset {
+    background-color: #2B3A67;
+    color: white;
+    font-size: 1.75vw;
+    padding: 6px 20px 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.reset:active {
+    box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.3);
 }
