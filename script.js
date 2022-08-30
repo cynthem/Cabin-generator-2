@@ -39,8 +39,8 @@ nextBtn.addEventListener('click', () => {
     window.setTimeout(() => {
         topResults.classList.add('hide');
         topResults.classList.remove('fade-out');
-        startCard.classList.toggle('choose-start-open');
-        startOverlay.classList.toggle('overlay-start-invisible');
+        dateCard.classList.toggle('choose-date-open');
+        dateOverlay.classList.toggle('overlay-date-invisible');
     }, 1000);
 });
 
