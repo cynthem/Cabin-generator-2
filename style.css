@@ -156,7 +156,46 @@ h2 {
 
 /* TOP RESULTS */
 
+.fade-in {
+    animation: fadeIn 1s;
+}
 
+.fade-out {
+    animation: fadeOut 1s;
+}
+
+.results {
+    display: none;
+    flex-direction: column;
+    gap: 5vh;
+    padding-bottom: 5vh;
+}
+
+.embeds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.reset-button {
+    text-align: center;
+}
+
+.reset {
+    background-color: #2B3A67;
+    color: white;
+    font-size: 1.75vw;
+    padding: 6px 20px 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.reset:active {
+    box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
 
 
 /* CHOOSE DATE */
@@ -337,14 +376,6 @@ input[type=submit]:active {
 
 
 /* RESULTS */
-
-.fade-in {
-    animation: fadeIn 1s;
-}
-
-.fade-out {
-    animation: fadeOut 1s;
-}
 
 .results {
     display: none;
