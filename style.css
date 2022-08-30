@@ -177,6 +177,12 @@ h2 {
     justify-items: center;
 }
 
+.airbnb-embed-frame {
+    width: 450px;
+    height: 300px;
+    margin: auto;
+}
+
 .availability {
     display: flex;
     flex-direction: column;
