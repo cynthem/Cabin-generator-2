@@ -122,6 +122,62 @@ function renderOlympic(date) {
     }
 }
 
-function renderNorthwest(date) {}
+function renderNorthwest(date) {
+    if (date === 'oct14') {
+        embeds.forEach(embed => {
+            if (embed.classList.contains('northwest') && embed.classList.contains('oct14')) {
+                embed.classList.remove('hide');
+            }
+        });
+    } else if (date === 'oct21') {
+        embeds.forEach(embed => {
+            if (embed.classList.contains('northwest') && embed.classList.contains('oct21')) {
+                embed.classList.remove('hide');
+            }
+        });
+    } else if (date === 'oct28') {
+        embeds.forEach(embed => {
+            if (embed.classList.contains('northwest') && embed.classList.contains('oct28')) {
+                embed.classList.remove('hide');
+            }
+        });
+    } else if (date === 'nov4') {
+        embeds.forEach(embed => {
+            if (embed.classList.contains('northwest') && embed.classList.contains('nov4')) {
+                embed.classList.remove('hide');
+            }
+        });
+    } else if (date === 'nov11') {
+        embeds.forEach(embed => {
+            if (embed.classList.contains('northwest') && embed.classList.contains('nov11')) {
+                embed.classList.remove('hide');
+            }
+        });
+    } else if (date === 'nov18') {
+        embeds.forEach(embed => {
+            if (embed.classList.contains('northwest') && embed.classList.contains('nov18')) {
+                embed.classList.remove('hide');
+            }
+        });
+    } else if (date === 'nov25') {
+        embeds.forEach(embed => {
+            if (embed.classList.contains('northwest') && embed.classList.contains('nov25')) {
+                embed.classList.remove('hide');
+            }
+        });
+    } else if (date === 'dec9') {
+        embeds.forEach(embed => {
+            if (embed.classList.contains('northwest') && embed.classList.contains('dec9')) {
+                embed.classList.remove('hide');
+            }
+        });
+    } else if (date === 'dec16') {
+        embeds.forEach(embed => {
+            if (embed.classList.contains('northwest') && embed.classList.contains('dec16')) {
+                embed.classList.remove('hide');
+            }
+        });
+    }
+}
 
 function renderSoutheast(date) {}
