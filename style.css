@@ -83,7 +83,6 @@ h1 {
 /* INTRO CARD */
 
 .overlay-choose-start {
-    /*z-index: 2;*/
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -444,19 +443,34 @@ input[type=submit]:active {
         margin-bottom: 25px;
     }
     .header {
-        padding: 2% 0 1.5%;
-        grid-template-columns: 25% 50% 25%;
+        padding: 3% 0 2%;
+        grid-template-columns: 17% 66% 17%;
     }
     h1 {
-        font-size: 4vw;
+        font-size: 5.5vw;
         letter-spacing: 0.05em;
     }
     .cabins-left > img,
     .cabins-right > img {
-        width: 5vw;
+        width: 6vw;
     }
     .footer {
         height: 25px;
-        font-size: 3vw;
+        font-size: 4vw;
+    }
+    .choose-start {
+        height: 50vh;
+        width: 80vw;
+    }
+    h2 {
+        font-size: 5vw;
+        padding: 10% 2% 0;
+    }
+    .choice {
+        width: 50%;
+        height: 60%;
+    }
+    .choice > button {
+        font-size: 4vw;
     }
 }
