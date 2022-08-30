@@ -1,3 +1,7 @@
+const searchBtn = document.querySelector('.search');
+const topBtn = document.querySelector('.top');
+const startCard = document.querySelector('.choose-start');
+const startOverlay = document.querySelector('.overlay-choose-start');
 const dateBtn = document.querySelector('.date-choices');
 const dateCard = document.querySelector('.choose-date');
 const dateOverlay = document.querySelector('.overlay-choose-date');
@@ -10,6 +14,13 @@ const embeds = document.querySelectorAll('.airbnb-embed-frame');
 
 let chosenDate;
 let chosenRegion;
+
+searchBtn.addEventListener('click', () => {
+    startCard.classList.toggle('choose-start-open');
+    startOverlay.classList.toggle('overlay-start-invisible');
+    dateCard.classList.toggle('choose-date-open');
+    dateOverlay.classList.toggle('overlay-date-invisible');
+});
 
 dateBtn.addEventListener('submit', e => {
     e.preventDefault();
@@ -33,13 +44,13 @@ regionBtn.addEventListener('submit', e => {
     window.setTimeout(() => {results.classList.remove('fade-in')}, 1000);
 });
 
-resetBtn.addEventListener('click', e => {
+resetBtn.addEventListener('click', () => {
     results.classList.add('fade-out');
     window.setTimeout(() => {
         results.style.display = 'none';
         results.classList.remove('fade-out');
-        dateCard.classList.toggle('choose-date-open');
-        dateOverlay.classList.toggle('overlay-date-invisible');
+        startCard.classList.toggle('choose-start-open');
+        startOverlay.classList.toggle('overlay-start-invisible');
         resetResults();
     }, 1000);
 });
