@@ -25,7 +25,7 @@ body {
     background-color: #B56B45;
     margin-bottom: 40px;
     cursor: default;
-    font-family: fantasy;
+    font-family: 'Luminari', fantasy;
 }
 
 .header {
@@ -41,6 +41,7 @@ h1 {
     text-align: center;
     width: 100%;
     font-size: 3.5vw;
+    letter-spacing: 0.02em;
 }
 
 .cabins-left {
