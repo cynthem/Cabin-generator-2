@@ -435,3 +435,28 @@ input[type=submit]:active {
 .hide {
     display: none;
 }
+
+
+/* MOBILE STYLES */
+
+@media (max-width: 650px) {
+    body {
+        margin-bottom: 25px;
+    }
+    .header {
+        padding: 2% 0 1.5%;
+        grid-template-columns: 25% 50% 25%;
+    }
+    h1 {
+        font-size: 4vw;
+        letter-spacing: 0.05em;
+    }
+    .cabins-left > img,
+    .cabins-right > img {
+        width: 5vw;
+    }
+    .footer {
+        height: 25px;
+        font-size: 3vw;
+    }
+}
