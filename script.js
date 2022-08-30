@@ -270,13 +270,3 @@ function renderSoutheast(date) {
         });
     }
 }
-
-if (window.innerWidth < 600) {
-    for (let embed of embeds) {
-        let scale = (window.innerWidth - 15) / embed.offsetWidth;
-        embed.style.transform = 'scale(' + scale + ')';
-        console.log(window.innerWidth)
-    }
-    window.onload = () => resize();
-    window.onresize = () => resize();
-}

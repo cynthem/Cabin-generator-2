@@ -438,7 +438,14 @@ input[type=submit]:active {
 
 /* MOBILE STYLES */
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
+    .top-embeds {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width: 550px) {
     body {
         margin-bottom: 25px;
     }
@@ -472,5 +479,8 @@ input[type=submit]:active {
     }
     .choice > button {
         font-size: 4vw;
+    }
+    .top-all {
+        transform: scale(0.5);
     }
 }
