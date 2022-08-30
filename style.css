@@ -444,11 +444,19 @@ input[type=submit]:active {
 
 /* MOBILE STYLES */
 
+
+
+.next {
+    font-size: 1.5vw;
+    padding: 8px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 900px) {
     .top-embeds {
         grid-template-columns: repeat(1, 1fr);
     }
-
 }
 
 @media (max-width: 550px) {
@@ -486,7 +494,31 @@ input[type=submit]:active {
     .choice > button {
         font-size: 4vw;
     }
-    .top-all {
-        transform: scale(0.5);
+    .top-results {
+        overflow-x: hidden;
+    }
+    .top-results > h2 {
+        font-size: 5.7vw;
+    }
+    .top-embeds {
+        transform: translate(0, -3%);
+    }
+    .top-embeds > div {
+        transform: translate(-16%);
+    }
+    .airbnb-embed-frame {
+        transform: scale(0.6);
+    }
+    .top-5 {
+        transform: translate(0, -75%);
+    }
+    .top-6 {
+        transform: translate(0, -70%);
+    }
+    .available {
+        font-size: 4.5vw;
+    }
+    li {
+        font-size: 4vw;
     }
 }
