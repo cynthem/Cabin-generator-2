@@ -154,6 +154,11 @@ h2 {
 }
 
 
+/* TOP RESULTS */
+
+
+
+
 /* CHOOSE DATE */
 
 .overlay-choose-date {
@@ -354,10 +359,6 @@ input[type=submit]:active {
     justify-items: center;
 }
 
-.hide {
-    display: none;
-}
-
 .reset-button {
     text-align: center;
 }
@@ -376,4 +377,8 @@ input[type=submit]:active {
 
 .reset:active {
     box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hide {
+    display: none;
 }
