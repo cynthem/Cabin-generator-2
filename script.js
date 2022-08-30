@@ -4,6 +4,7 @@ const startCard = document.querySelector('.choose-start');
 const startOverlay = document.querySelector('.overlay-choose-start');
 const nextBtn = document.querySelector('.next');
 const topResults = document.querySelector('.top-results');
+const topEmbeds = document.querySelector('.top-all');
 const dateBtn = document.querySelector('.date-choices');
 const dateCard = document.querySelector('.choose-date');
 const dateOverlay = document.querySelector('.overlay-choose-date');
@@ -27,6 +28,7 @@ searchBtn.addEventListener('click', () => {
 topBtn.addEventListener('click', () => {
     startCard.classList.toggle('choose-start-open');
     startOverlay.classList.toggle('overlay-start-invisible');
+    resizeTopEmbeds();
     window.setTimeout(() => {
         topResults.classList.add('fade-in');
         topResults.classList.remove('hide');
@@ -77,12 +79,22 @@ resetBtn.addEventListener('click', () => {
     }, 1000);
 });
 
+function resizeTopEmbeds() {
+    for (let embed of topEmbeds) {
+        let scale = (window.innerWidth - 15) / embed.offsetWidth;
+        embed.style.transform = 'scale(' + scale + ')';
+        console.log(window.innerWidth)
+    }
+    window.onload = () => resize();
+    window.onresize = () => resize();
+}
+
 function resetResults() {
     embeds.forEach(embed => {
         if (!embed.classList.contains('hide')) {
             embed.classList.add('hide');
         }
-    })
+    });
     chosenDate = '';
     chosenRegion = '';
 }
@@ -270,15 +282,3 @@ function renderSoutheast(date) {
         });
     }
 }
-
-(function () {
-    const resize = () => {
-        for (let embed of embeds) {
-            let scale = (window.innerWidth - 15) / embed.offsetWidth;
-            embed.style.transform = 'scale(' + scale + ')';
-            console.log(window.innerWidth)
-        }
-    }
-    window.onload = () => resize();
-    window.onresize = () => resize();
-})();
