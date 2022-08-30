@@ -2,6 +2,8 @@ const searchBtn = document.querySelector('.search');
 const topBtn = document.querySelector('.top');
 const startCard = document.querySelector('.choose-start');
 const startOverlay = document.querySelector('.overlay-choose-start');
+const nextBtn = document.querySelector('.next');
+const topResults = document.querySelector('.top-results');
 const dateBtn = document.querySelector('.date-choices');
 const dateCard = document.querySelector('.choose-date');
 const dateOverlay = document.querySelector('.overlay-choose-date');
@@ -20,6 +22,26 @@ searchBtn.addEventListener('click', () => {
     startOverlay.classList.toggle('overlay-start-invisible');
     dateCard.classList.toggle('choose-date-open');
     dateOverlay.classList.toggle('overlay-date-invisible');
+});
+
+topBtn.addEventListener('click', () => {
+    startCard.classList.toggle('choose-start-open');
+    startOverlay.classList.toggle('overlay-start-invisible');
+    window.setTimeout(() => {
+        topResults.classList.add('fade-in');
+        topResults.classList.remove('hide');
+    }, 300);
+    window.setTimeout(() => {topResults.classList.remove('fade-in')}, 1000);
+});
+
+nextBtn.addEventListener('click', () => {
+    topResults.classList.add('fade-out');
+    window.setTimeout(() => {
+        topResults.classList.add('hide');
+        topResults.classList.remove('fade-out');
+        startCard.classList.toggle('choose-start-open');
+        startOverlay.classList.toggle('overlay-start-invisible');
+    }, 1000);
 });
 
 dateBtn.addEventListener('submit', e => {
