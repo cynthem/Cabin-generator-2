@@ -602,4 +602,20 @@ input[type=submit]:active {
     .radios {
         justify-items: center;
     }
+    .embeds {
+        display: flex;
+        flex-direction: column;
+        transform: translate(-24%, -1%);
+    }
+    .airbnb-embed-frame {
+        transform: scale(0.6);
+    }
+    .reset {
+        font-size: 4.5vw;
+        padding: 8px 20px;
+    }
 }
+
+
+
+
