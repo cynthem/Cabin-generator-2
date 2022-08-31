@@ -228,7 +228,6 @@ li {
 /* CHOOSE DATE */
 
 .overlay-choose-date {
-    /*z-index: 2;*/
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -256,8 +255,6 @@ li {
     box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.3);
     transition: all .3s;
     display: grid;
-    /*grid-template-rows: 30% 60%;
-    row-gap: 10%;*/
     grid-template-rows: 20% 75%;
     row-gap: 5%;
     visibility: hidden;
@@ -286,7 +283,6 @@ h3 {
     display: grid;
     grid-template-rows: 70% 20%;
     row-gap: 10%;
-    /*padding-bottom: 2%;*/
 }
 
 .date-radios {
@@ -331,7 +327,6 @@ input[type=submit]:active {
 /* CHOOSE REGION */
 
 .overlay-choose-region {
-    /*z-index: 2;*/
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -507,7 +502,7 @@ input[type=submit]:active {
         transform: translate(-16%, -88%);
     }
     .mobile-adjust-5 {
-        transform: translate(-16%, -109%);
+        transform: translate(-16%, -108%);
     }
     .mobile-adjust-6 {
         transform: translate(-16%, -130%);
@@ -541,5 +536,70 @@ input[type=submit]:active {
     .next {
         font-size: 4.5vw;
         padding: 8px 20px;
+    }
+    .choose-date {
+        width: 80vw;
+        grid-template-rows: 20% 79%;
+        row-gap: 1%;
+    }
+    .welcome {
+        padding: 5% 5% 0;
+        gap: 0px;
+    }
+    h3 {
+        font-size: 5vw;
+    }
+    .date-choices {
+        grid-template-rows: 80% 17%;
+        row-gap: 3%;
+    }
+    span {
+        display: none;
+    }
+    input[type="radio"] {
+        position: relative;
+        left: 2.2rem;
+        height: 1px;
+        width: 1px;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+    }
+    label {
+        display: inline-block;
+        font-size: 3.8vw;
+        border-radius: 4px;
+        background-color: #E84855;
+        color: white;
+        text-align: center;
+    }
+    input[type="radio"]:checked+label { 
+        border: 1px solid white;
+        padding: 3px 5px 2px;
+    } 
+    input[type=submit] {
+        font-size: 4vw;
+        padding: 6px 20px 8px;
+    }
+    .choose-region {
+        width: 80vw;
+        grid-template-rows: 20% 79%;
+        row-gap: 1%;
+    }
+    .region-choices {
+        grid-template-rows: 80% 17%;
+        row-gap: 3%;
+    }
+    .region-radios {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 0;
+    }
+    .region-radios > img {
+        justify-self: center;
+        width: 80%;
+    }
+    .radios {
+        justify-items: center;
     }
 }
