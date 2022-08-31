@@ -400,7 +400,7 @@ input[type=submit]:active {
 /* RESULTS */
 
 .results {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 5vh;
     padding-bottom: 5vh;
@@ -507,9 +507,9 @@ input[type=submit]:active {
     .mobile-adjust-6 {
         transform: translate(-16%, -130%);
     }
-    .airbnb-embed-frame {
+    /*.airbnb-embed-frame {
         transform: scale(0.6);
-    }
+    }*/
     .top-1 {
         transform: translate(0, -200%);
     }
@@ -606,11 +606,10 @@ input[type=submit]:active {
         transform: translate(0, -1%);
     }
     .embeds {
-        grid-template-columns: repeat(1, 315px);
+        grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 350px;
-        justify-content: center;
     }
-    .airbnb-embed-frame {
+    .airbnb-embed-frame > iframe {
         transform: scale(0.7);
     }
     .reset {

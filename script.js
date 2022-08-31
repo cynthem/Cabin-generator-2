@@ -61,7 +61,7 @@ regionBtn.addEventListener('submit', e => {
     filterResults(chosenRegion, chosenDate);
     window.setTimeout(() => {
         results.classList.add('fade-in');
-        results.style.display = 'flex';
+        results.classList.remove('hide');
     }, 300);
     window.setTimeout(() => {results.classList.remove('fade-in')}, 1000);
 });
@@ -69,7 +69,7 @@ regionBtn.addEventListener('submit', e => {
 resetBtn.addEventListener('click', () => {
     results.classList.add('fade-out');
     window.setTimeout(() => {
-        results.style.display = 'none';
+        results.classList.add('hide');
         results.classList.remove('fade-out');
         startCard.classList.toggle('choose-start-open');
         startOverlay.classList.toggle('overlay-start-invisible');
