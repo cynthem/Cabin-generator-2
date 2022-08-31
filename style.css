@@ -602,13 +602,16 @@ input[type=submit]:active {
     .radios {
         justify-items: center;
     }
+    .results {
+        transform: translate(0, -1%);
+    }
     .embeds {
-        display: flex;
-        flex-direction: column;
-        transform: translate(-24%, -1%);
+        grid-template-columns: repeat(1, 315px);
+        grid-auto-rows: 350px;
+        justify-content: center;
     }
     .airbnb-embed-frame {
-        transform: scale(0.6);
+        transform: scale(0.7);
     }
     .reset {
         font-size: 4.5vw;
