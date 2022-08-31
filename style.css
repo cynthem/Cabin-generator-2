@@ -503,8 +503,23 @@ input[type=submit]:active {
     .top-embeds {
         transform: translate(0, -3%);
     }
-    .top-embeds > div {
+    .mobile-adjust-1 {
         transform: translate(-16%);
+    }
+    .mobile-adjust-2 {
+        transform: translate(-16%, -30%);
+    }
+    .mobile-adjust-3 {
+        transform: translate(-16%, -60%);
+    }
+    .mobile-adjust-4 {
+        transform: translate(-16%, -88%);
+    }
+    .mobile-adjust-5 {
+        transform: translate(-16%, -105%);
+    }
+    .mobile-adjust-6 {
+        transform: translate(-16%, -100%);
     }
     .airbnb-embed-frame {
         transform: scale(0.6);
