@@ -509,6 +509,14 @@ input[type=submit]:active {
     .airbnb-embed-frame {
         transform: scale(0.6);
     }
+    .top-1 {
+        transform: translate(0, -200%);
+    }
+    .top-2,
+    .top-3,
+    .top-4 {
+        transform: translate(0, -145%);
+    }
     .top-5 {
         transform: translate(0, -75%);
     }
