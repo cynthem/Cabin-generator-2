@@ -481,48 +481,21 @@ input[type=submit]:active {
         font-size: 4vw;
     }
     .top-results {
-        overflow-x: hidden;
+        display: grid;
+        grid-template-rows: 75px 1fr 70px;
+        gap: 0;
+        padding-bottom: 3vh;
+    }
+    .top-embeds {
+        transform: translate(0, -1%);
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
     }
     .top-results > h2 {
         font-size: 5.7vw;
     }
-    .top-embeds {
-        transform: translate(0, -3%);
-    }
-    .mobile-adjust-1 {
-        transform: translate(-16%);
-    }
-    .mobile-adjust-2 {
-        transform: translate(-16%, -30%);
-    }
-    .mobile-adjust-3 {
-        transform: translate(-16%, -60%);
-    }
-    .mobile-adjust-4 {
-        transform: translate(-16%, -88%);
-    }
-    .mobile-adjust-5 {
-        transform: translate(-16%, -108%);
-    }
-    .mobile-adjust-6 {
-        transform: translate(-16%, -130%);
-    }
-    /*.airbnb-embed-frame {
-        transform: scale(0.6);
-    }*/
-    .top-1 {
-        transform: translate(0, -200%);
-    }
-    .top-2,
-    .top-3,
-    .top-4 {
-        transform: translate(0, -145%);
-    }
-    .top-5 {
-        transform: translate(0, -75%);
-    }
-    .top-6 {
-        transform: translate(0, -70%);
+    .airbnb-embed-frame > iframe {
+        transform: scale(0.7);
     }
     .available {
         font-size: 4.5vw;
@@ -531,9 +504,12 @@ input[type=submit]:active {
         font-size: 4vw;
     }
     .top-button {
-        transform: translate(0, -3000%);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
     }
     .next {
+
         font-size: 4.5vw;
         padding: 8px 20px;
     }
@@ -604,17 +580,27 @@ input[type=submit]:active {
     }
     .results {
         transform: translate(0, -1%);
+        display: grid;
+        grid-template-rows: 1fr 200px;
+        gap: 0;
+        padding-bottom: 1vh;
     }
     .embeds {
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 350px;
     }
-    .airbnb-embed-frame > iframe {
-        transform: scale(0.7);
+    .reset-button {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
     }
     .reset {
+        height: 30%;
         font-size: 4.5vw;
         padding: 8px 20px;
+    }
+    .hide {
+        display: none;
     }
 }
 
