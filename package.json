@@ -1,0 +1,27 @@
+{
+  "name": "cabin-generator-2",
+  "version": "1.0.0",
+  "description": "Cabin generator",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doozles411/Cabin-generator-2.git"
+  },
+  "keywords": [
+    "cabins",
+    "airbnb"
+  ],
+  "author": "CMP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doozles411/Cabin-generator-2/issues"
+  },
+  "homepage": "https://github.com/doozles411/Cabin-generator-2#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
