@@ -1,7 +1,7 @@
 # Cabin-generator-2
 > The second version of a cabin-generating app, a personal project created for friends to make group trips easier. A static page that filters a list of AirBnb embeds by date and region.
 
-Live demo [_here_](https://www.cabin-generator.com/)
+Live demo [_here_](https://cynthem.github.io/Cabin-generator-2/)
 
 ## Room for Improvement
 To do:
